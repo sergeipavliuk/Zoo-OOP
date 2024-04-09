@@ -18,21 +18,21 @@ zoo = Zoo()
 
 print('\n##################### Spowning animals\n')
 
-for i in range(5):
+for i in range(10):
     zoo.add_animal(Antilopa(name = fake.name().split()[0], age=random.randint(1,40), energy=random.randint(50,100), weight = random.randint(150,300), speed = random.randint(30,100), skill = random.randint(1,100), luck = random.randint(1,100), defence= random.randint(20,70) ))
-for i in range(5):
+for i in range(3):
     zoo.add_animal(Cheetah(name = fake.name().split()[0], age=random.randint(1,40), energy=random.randint(50,100), weight = random.randint(30,60), speed = random.randint(30,100), skill = random.randint(1,100), luck = random.randint(1,100) ))
-for i in range(5):
+for i in range(10):
     zoo.add_animal(Elefant(name = fake.name().split()[0], age=random.randint(1,40), energy=random.randint(50,100), weight = random.randint(1000,5000), speed = random.randint(20,50), skill = random.randint(1,100), luck = random.randint(1,100),defence= random.randint(20,70) ))
-for i in range(5): 
+for i in range(10): 
     zoo.add_animal(Giraffe(name = fake.name().split()[0], age=random.randint(1,40), energy=random.randint(50,100), weight = random.randint(1000,5000), speed = random.randint(20,50), skill = random.randint(1,100), luck = random.randint(1,100),defence= random.randint(20,70) ))
-for i in range(5):    
+for i in range(4):    
     zoo.add_animal(Leopard(name = fake.name().split()[0], age=random.randint(1,40), energy=random.randint(50,100), weight = random.randint(150,300), speed = random.randint(30,100), skill = random.randint(1,100), luck = random.randint(1,100) ))
-for i in range(5):
+for i in range(4):
     zoo.add_animal(Lion(name = fake.name().split()[0], age=random.randint(1,40), energy=random.randint(50,100), weight = random.randint(150,300), speed = random.randint(30,100), skill = random.randint(1,100), luck = random.randint(1,100)))
-for i in range(5):    
+for i in range(30):    
     zoo.add_animal(Mouse(name = fake.name().split()[0], age=random.randint(1,40), energy=random.randint(50,100), weight = random.randint(150,300), speed = random.randint(30,100), skill = random.randint(1,100), luck = random.randint(1,100), defence= random.randint(0,7)))
-for i in range(5):    
+for i in range(10):    
     zoo.add_animal(Zeebra(name = fake.name().split()[0], age=random.randint(1,40), energy=random.randint(50,100), weight = random.randint(150,300), speed = random.randint(30,100), skill = random.randint(1,100), luck = random.randint(1,100), defence= random.randint(20,70)))
 
 print('\n##################### Spowning visitors\n')

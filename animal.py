@@ -44,34 +44,49 @@ class Animal():
     def luck(self) -> int:
         return self._luck
     
+    @energy.setter
+    def energy(self, value) -> None:
+        self._energy = value
 
-        
+    @weight.setter
+    def weight(self, value) -> None:
+        self._weight = value    
 
+    @speed.setter
+    def speed(self, value) -> None:
+        self._speed = value
 
+    @skill.setter
+    def skill(self, value) -> None:
+        self._skill = value
+
+    @luck.setter
+    def luck(self, value) -> None:
+        self._luck = value
 
     
     def spown(self):
         print("Hi, I'm a basic animal")
 
     def graze(self):
-        self._energy += 10
+        self.energy += 10
         
     def eat(self, food: Food):
         if self.energy < 100:
-            self._energy += food.energy
+            self.energy += food.energy
             print('Nom-nom')
         else:
             print("Neah, I'm full")
 
     def hunt(self):
-        self._energy -= 5
+        self.energy -= 5
 
     def sleep(self):
-        self._energy += 10
+        self.energy += 10
         print(f'Zzz...    energy = {self.energy}')
 
     def consumpt(self):
-        self._energy -= 30
+        self.energy -= 30
 
     def make_sound(self):
         print('Basic animal sound')
