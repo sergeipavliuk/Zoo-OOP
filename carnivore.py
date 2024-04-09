@@ -14,11 +14,11 @@ class Carnivore(Animal):
             self._energy += int(prey._energy/10)
             prey._energy = -1000
         else:
+            print(f'Lucky {prey.__class__.__name__}')
             self._energy -= 5
             prey._energy -= 5
    
     def eat(self, food: Food):
-        print('Nom-nom')
         return super().eat(food)
     
     

@@ -59,6 +59,7 @@ class Animal():
     def eat(self, food: Food):
         if self.energy < 100:
             self._energy += food.energy
+            print('Nom-nom')
         else:
             print("Neah, I'm full")
 
@@ -70,7 +71,7 @@ class Animal():
         print(f'Zzz...    energy = {self.energy}')
 
     def consumpt(self):
-        self._energy -= 10
+        self._energy -= 15
 
     def make_sound(self):
         print('Basic animal sound')

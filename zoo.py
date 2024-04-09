@@ -58,8 +58,8 @@ class Zoo:
             for i in range(3):
                 random_animal = random.choice(self.animals)
                 random_food = random.choice(self.food)
-                visitor.feed(random_food,random_animal)
                 print(f'Visitor {visitor.name} is feeding {random_animal.name} the {random_animal.__class__.__name__}')
+                visitor.feed(random_food,random_animal)
 
         self.consumpt()
         self.bring_out_your_dead()

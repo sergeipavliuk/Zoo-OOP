@@ -21,7 +21,7 @@ class Herbivore(Animal):
 
     def hunt(self, prey:Animal):
         print(f'Oh, you are not a carrot, sorry dear {prey.name}')
-        return super().hunt()
+        #return super().hunt()
 
     
     
