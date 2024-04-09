@@ -14,15 +14,9 @@ from food import Food
 from zoo import Zoo
 
 fake = faker.Faker()
-
-
-meat_loaf = Food(False, 50)
-yammy_weed = Food(True, 10)
-
-
 zoo = Zoo()
 
-print('##################### Spowning animals')
+print('\n##################### Spowning animals\n')
 
 for i in range(5):
     zoo.add_animal(Antilopa(name = fake.name().split()[0], age=random.randint(1,40), energy=random.randint(50,100), weight = random.randint(150,300), speed = random.randint(30,100), skill = random.randint(1,100), luck = random.randint(1,100), defence= random.randint(20,70) ))
@@ -41,18 +35,18 @@ for i in range(5):
 for i in range(5):    
     zoo.add_animal(Zeebra(name = fake.name().split()[0], age=random.randint(1,40), energy=random.randint(50,100), weight = random.randint(150,300), speed = random.randint(30,100), skill = random.randint(1,100), luck = random.randint(1,100), defence= random.randint(20,70)))
 
-
-print('##################### Spowning visitors')
+print('\n##################### Spowning visitors\n')
 for i in range(20):
     zoo.add_visitor(Visitor(name = fake.name()))
 
-print('##################### Spowning food')
+print('\n##################### Spowning food\n')
 for i in range(20):
     zoo.add_food(Food(random.choice([True, False]), random.randint(10,30)))
 
 for i in range(5):
     zoo.day_sim(i)
 
+print('\n##################### Greet the survivors\n')
 
-for an in zoo.animals:
-    print(an, '\n')
+for animal in zoo.animals:
+        print(f'{animal.name} the {animal.__class__.__name__}: Energy = {animal.energy}')

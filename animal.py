@@ -71,7 +71,7 @@ class Animal():
         print(f'Zzz...    energy = {self.energy}')
 
     def consumpt(self):
-        self._energy -= 15
+        self._energy -= 30
 
     def make_sound(self):
         print('Basic animal sound')
